@@ -1,8 +1,8 @@
 # Intro to Kubernetes
 
-This repository runs a local [Kubernetes](https://kubernetes.io/) cluster using [kind](https://kind.sigs.k8s.io/). Unfortunately, it only works on Unix-based systems, that is, Mac or Linux. If on Windows, we recommend installing [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install).
+This repository runs a local [Kubernetes](https://kubernetes.io/) cluster using [kind](https://kind.sigs.k8s.io/).
 
-Running `run.sh` creates the Kubernetes cluster and installs the [Nginx ingress controller](https://docs.nginx.com/nginx-ingress-controller/).
+Running `run.sh` creates the Kubernetes cluster and installs the [Nginx ingress controller](https://docs.nginx.com/nginx-ingress-controller/). Unfortunately, it only works on Unix-based systems, that is, Mac or Linux. If on Windows, we recommend installing [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install). However, you could adapt it to Windows with some changes.
 
 After setting up the Kubernetes cluster, you can deploy an Nginx web server using the YAML files in the `manifests` directory using `kubectl apply -f <object>.yaml`.
 
