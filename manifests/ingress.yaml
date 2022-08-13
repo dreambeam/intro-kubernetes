@@ -9,7 +9,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /<your-path-here>
+      - path: /nginx
         pathType: Prefix
         backend:
           service:
