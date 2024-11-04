@@ -1,0 +1,14 @@
+apiVersion: v1
+kind:
+metadata:
+  name:
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 3Gi
+  accessModes: 
+    - ReadOnlyOnce
+  hostPath: 
+    path: "/mnt/data"
