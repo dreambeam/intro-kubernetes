@@ -1,3 +1,4 @@
+# Option 1: FS-hosted static pod manifest
 # Run this command on the node where kubelet is running
 mkdir -p /etc/kubernetes/manifests/
 cat <<EOF >/etc/kubernetes/manifests/static-web.yaml
@@ -16,3 +17,10 @@ spec:
           containerPort: 80
           protocol: TCP
 EOF
+
+# Option 2 : Web-hosted static pod manifest
+--manifest-url=<URL>
+edit /etc/kubernetes/kubelet to include 
+KUBELET_ARGS="--cluster-dns=10.254.0.10 --cluster-domain=kube.local --manifest-url=<manifest-url>"
+
+# systemctl restart kubelet
