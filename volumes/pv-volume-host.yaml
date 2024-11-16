@@ -12,3 +12,5 @@ spec:
     - ReadOnlyOnce
   hostPath: 
     path: "/mnt/data"
+
+#   persistentVolumeReclaimPolicy: Retain
