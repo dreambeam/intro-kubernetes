@@ -1,0 +1,7 @@
+apiVersion:
+kind:
+metadata:
+  name: etcd-backup
+  labels:
+    type: operation
+spec:
