@@ -4,10 +4,10 @@ metadata:
   name: nfs-pv
 spec
   capacity:
-    storage
+    storage: 1Gi
   accessModes:
     - 
   mountOptions:
   nfs:
-    path:
+    path: /tmp
     server:
