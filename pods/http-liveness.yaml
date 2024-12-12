@@ -19,3 +19,8 @@ spec:
           value: Awesome
       initialDelaySeconds: 3
       periodSeconds: 3
+#    lifecyle: # container lifecyle handler
+#      postStart:
+#        exec:
+#          command: []
+#      preStop:
